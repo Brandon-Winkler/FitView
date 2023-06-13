@@ -5,9 +5,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'FitYellow': '#ECFF12'
+      },
       fontFamily: {
         bebas: ['Bebas Neue, sans-serif'],
-      }
+      },
     },
   },
   plugins: [],
