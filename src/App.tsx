@@ -1,4 +1,5 @@
 import { useState } from 'react';
+// import { Link } from "react-router-dom";
 import './index.css';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,6 +10,7 @@ import weightsImage from './assets/weights.png';
 import racksImage from './assets/racks.png';
 import machinesImage from './assets/machines.png';
 import attatchmentsImage from './assets/attatchments.png';
+import NavBar from './components/NavBar';
 
 interface Slide {
   img: string;
@@ -54,15 +56,7 @@ function App() {
 
   return (
     <>
-      <nav className='bg-white h-24'>
-        <div className='flex justify-center items-center h-full'>
-          <ul className='flex items-center gap-[3vw]'>
-            <li><button type='button' className='bg-white font-bebas hover:underline text-3xl'>Reviews</button></li>
-            <li><button type='button' className='bg-white font-bebas hover:underline text-3xl'>Used Gear</button></li>
-            <li><button type='button' className='bg-white font-bebas hover:underline text-3xl'>Login/Sign-Up</button></li>
-          </ul>
-        </div>
-      </nav>
+      <NavBar></NavBar>
       <div className='max-w h-[700px] relative group'>
         <div style={{ backgroundImage: `url(${slides[currentIndex].img})` }} className='w-full h-full bg-center bg-cover duration-500'></div>
         {/* left arrow */}
