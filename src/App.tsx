@@ -11,6 +11,7 @@ import racksImage from './assets/racks.png';
 import machinesImage from './assets/machines.png';
 import attatchmentsImage from './assets/attatchments.png';
 import NavBar from './components/NavBar';
+import SideBar from './components/SideBar'
 
 interface Slide {
   img: string;
@@ -79,6 +80,7 @@ function App() {
           ))}
         </div>
       </div>
+      <h1 className="text-center font-roboto py-10 text-2xl">Recent Activity</h1>
     </>
   )
 }

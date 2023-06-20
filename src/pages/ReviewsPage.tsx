@@ -1,9 +1,13 @@
 // import React from 'react';
 import NavBar from '../components/NavBar';
+import SideBar from '../components/SideBar';
 
 const ReviewsPage = () => {
     return(
-        <NavBar></NavBar>
+        <div>
+            <NavBar></NavBar>
+            <SideBar></SideBar>
+        </div>
     );
 }
 
