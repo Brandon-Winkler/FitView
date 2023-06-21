@@ -37,7 +37,7 @@ const SideBar = () => {
                 </button>
             </div>
             <div
-                className={`fixed top-0 left-0 w-full h-full bg-black opacity-50 transition-opacity duration-300 ${
+                className={`fixed top-0 left-0 w-full h-full bg-black opacity-0 transition-opacity duration-300 ${
                     isOpen ? "opacity-50 pointer-events-auto" : "opacity-0 pointer-events-none"
                 }`}
                 onClick={() => setIsOpen(false)}
