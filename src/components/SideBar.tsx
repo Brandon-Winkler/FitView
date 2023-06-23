@@ -2,6 +2,7 @@ import { useState } from "react";
 import { faFilter } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '@fortawesome/fontawesome-svg-core/styles.css';
+
 const SideBar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -59,25 +60,48 @@ const SideBar = () => {
                         </ul>
                     </div>
                     <div className="border-b-2 pb-5">
-                        <h1 className="text-lg pl-5 py-4 font-medium">Ratings</h1>
+                        <h1 className="text-lg pl-5 py-5 font-medium">Condition</h1>
                         <ul className="pl-5 flex flex-col items-start">
-                            <div>
-                                <input type="checkbox" />
+                            <div className="flex flex-row">
+                                <input type="checkbox" className="accent-black cursor-pointer" />
+                                    <p className="pl-2">Brand New</p>
                             </div>
-                            <div>
-                                <input type="checkbox" />
+                            <div className="flex flex-row">
+                                <input type="checkbox" className="accent-black cursor-pointer" />
+                                    <p className="pl-2">Excellent</p>
                             </div>
-                            <div>
-                                <input type="checkbox" />
+                            <div className="flex flex-row">
+                                <input type="checkbox" className="accent-black cursor-pointer"/>
+                                    <p className="pl-2">Great</p>
                             </div>
-                            <div>
-                                <input type="checkbox" />
+                            <div className="flex flex-row">
+                                <input type="checkbox" className="accent-black cursor-pointer"/>
+                                    <p className="pl-2">Good</p>
                             </div>
-                            <div>
-                                <input type="checkbox" />
+                            <div className="flex flex-row">
+                                <input type="checkbox" className="accent-black cursor-pointer"/>
+                                    <p className="pl-2">Used</p>
                             </div>
                             
                         </ul>
+                    </div>
+                    <div className="border-b-2 pb-5">
+                        <h1 className="text-lg pl-5 py-4 font-medium">Date</h1>
+                        <div className="flex flex-col">
+                            <form action="">
+                                <div className="pl-5 flex flex-col px-16">
+                                    <p>Earliest: </p>
+                                    <input type="date" className=" px-5 py-2 pl-5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black" />
+                                </div>
+                                <div className="pl-5 flex flex-col px-16">
+                                    <p>Latest: </p>
+                                    <input type="date" className="px-5 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div className="border-b-2 pb-5">
+                        <h1 className="text-lg pl-5 py-4 font-medium">Price</h1>
                     </div>
             </div>
             <div
@@ -87,8 +111,6 @@ const SideBar = () => {
                 onClick={() => setIsOpen(false)}
             />
         </>
-
-
     );
 };
 
