@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
-import ReviewsPage from './pages/ReviewsPage.tsx'
 import UsedGearPage from './pages/UsedGearPage.tsx'
 import LoginSignupPage from './pages/LoginSignupPage.tsx'
 import {
@@ -14,10 +13,6 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>
-  },
-  {
-    path: "reviews",
-    element: <ReviewsPage/>
   },
   {
     path: "used-gear",
