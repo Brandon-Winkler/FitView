@@ -1,10 +1,10 @@
 const UserAuth = () => {
 
     return (
-        <div className="w-96 h-[32rem] z-20 bg-black m-auto">
+        <div className="w-96 h-[32rem] z-20 bg-white border-black border-8 m-auto">
             <div className="w-full h-[80px] bg-black flex items-center justify-center relative">
                 <div className="flex justify-center w-1/2 h-full">
-                    <button type="button" className="w-full cursor-pointer font-bebas px-8 py-4 text-2xl z-10 bg-black text-white hover:underline hover:invert">
+                    <button type="button" className=" w-full cursor-pointer font-bebas px-8 py-4 text-2xl z-10 bg-black text-white hover:underline hover:invert">
                         LogIn
                     </button>
                 </div>
@@ -14,12 +14,30 @@ const UserAuth = () => {
                     </button>
                 </div>
             </div>
-            <form action="" className="">
-                <label htmlFor="username" className="text-white">Username:</label><br />
-                <input type="text" />
-                <label htmlFor="password" className="text-white">Password:</label><br />
-                <input type="text" />
-            </form>
+            <div className="flex">
+                <form action="" className="flex flex-col pt-8">
+                    <div className="flex justify-center py-4 pt-4 h-16">
+                        <input type="text" placeholder='Username' className="border-b-2 border-black" />
+                    </div>
+                    <div className="flex justify-center py-4 pt-4 h-16">
+                        <input type="text" placeholder='Password' className="border-b-2 border-black" />
+                    </div>
+                    <div className="flex justify-center pt-8">
+                        <button type="submit" className="bg-black text-white px-8 py-2 rounded font-roboto">Log In</button>
+                    </div>
+                </form>
+                <form action="" className="flex flex-col pt-8 ml-56">
+                    <div className="flex justify-center py-4 pt-4 h-16">
+                        <input type="text" placeholder='Username' className="border-b-2 border-black" />
+                    </div>
+                    <div className="flex justify-center py-4 pt-4 h-16">
+                        <input type="text" placeholder='Password' className="border-b-2 border-black" />
+                    </div>
+                    <div className="flex justify-center pt-8">
+                        <button type="submit" className="bg-black text-white px-8 py-2 rounded font-roboto">Create</button>
+                    </div>
+                </form>
+            </div>
         </div>
     );
 }
