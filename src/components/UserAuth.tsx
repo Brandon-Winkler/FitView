@@ -15,7 +15,7 @@ const UserAuth = () => {
                 </div>
             </div>
             <div className="flex">
-                <form action="" className="flex flex-col pt-8">
+                <form action="" className="flex flex-col pt-8 ml-[71px]">
                     <div className="flex justify-center py-4 pt-4 h-16">
                         <input type="text" placeholder='Username' className="border-b-2 border-black" />
                     </div>
@@ -27,6 +27,12 @@ const UserAuth = () => {
                     </div>
                 </form>
                 <form action="" className="flex flex-col pt-8 ml-56">
+                    <div className="flex justify-center py-4 pt-4 h-16">
+                        <input type="text" placeholder='First Name' className="border-b-2 border-black" />
+                    </div>
+                    <div className="flex justify-center py-4 pt-4 h-16">
+                        <input type="text" placeholder='Last Name' className="border-b-2 border-black" />
+                    </div>
                     <div className="flex justify-center py-4 pt-4 h-16">
                         <input type="text" placeholder='Username' className="border-b-2 border-black" />
                     </div>
