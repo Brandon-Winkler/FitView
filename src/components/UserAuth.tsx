@@ -15,7 +15,7 @@ const UserAuth = () => {
                 </div>
             </div>
             <div className="flex">
-                <form action="" className="flex flex-col pt-8 ml-[71px]">
+                <form id="login" className="flex flex-col pt-8 ml-[71px]">
                     <div className="flex justify-center py-4 pt-4 h-16">
                         <input type="text" placeholder='Username' className="border-b-2 border-black" />
                     </div>
@@ -26,7 +26,7 @@ const UserAuth = () => {
                         <button type="submit" className="bg-black text-white px-8 py-2 rounded font-roboto">Log In</button>
                     </div>
                 </form>
-                <form action="" className="flex flex-col pt-8 ml-56">
+                <form id="sign_up" className="flex flex-col pt-8 ml-56 overflow-hidden">
                     <div className="flex justify-center py-4 pt-4 h-16">
                         <input type="text" placeholder='First Name' className="border-b-2 border-black" />
                     </div>
