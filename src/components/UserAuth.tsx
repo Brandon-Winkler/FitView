@@ -4,12 +4,12 @@ const UserAuth = () => {
         <div className="w-96 h-[32rem] z-20 bg-white border-black border-8 m-auto">
             <div className="w-full h-[80px] bg-black flex items-center justify-center relative">
                 <div className="flex justify-center w-1/2 h-full">
-                    <button type="button" className=" w-full cursor-pointer font-bebas px-8 py-4 text-2xl z-10 bg-black text-white hover:underline hover:invert">
+                    <button type="button" className="w-full cursor-pointer font-bebas px-8 py-4 text-2xl z-10 bg-black text-white hover:underline hover:invert focus:invert">
                         LogIn
                     </button>
                 </div>
                 <div className="flex justify-center w-1/2 h-full">
-                    <button type="button" className="w-full cursor-pointer font-bebas px-8 py-4 text-2xl z-10 bg-black text-white hover:underline hover:invert">
+                    <button type="button" className="w-full cursor-pointer font-bebas px-8 py-4 text-2xl z-10 bg-black text-white hover:underline hover:invert focus:invert">
                         Sign-up
                     </button>
                 </div>
