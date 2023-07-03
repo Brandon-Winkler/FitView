@@ -5,3 +5,12 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+/* custom css */
+#formContainer .flex {
+    transition: margin-left 0.3s ease-in-out;
+}
+
+#formContainer .flex.moved {
+    margin-left: calc(-100% + 20px);
+}
