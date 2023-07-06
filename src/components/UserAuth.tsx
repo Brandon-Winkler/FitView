@@ -1,4 +1,5 @@
 const UserAuth = () => {
+    
     document.addEventListener('DOMContentLoaded', () => {
         const loginBtn = document.getElementById('loginBtn') as HTMLButtonElement;
         const signupBtn = document.getElementById('signupBtn') as HTMLButtonElement;

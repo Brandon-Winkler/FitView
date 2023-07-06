@@ -11,7 +11,7 @@ const LoginSignupPage = () => {
             <div className='relative'>
                 <img src={authImage} className='w-full h-full' alt='Authentication' />
                 <div className='absolute top-0 left-0 w-full h-full z-20'>
-                    <div className="pt-32">
+                    <div className="pt-40">
                         <UserAuth></UserAuth>
                     </div>
                 </div>

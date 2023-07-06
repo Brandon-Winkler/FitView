@@ -12,5 +12,5 @@
 }
 
 #formContainer .flex.moved {
-    margin-left: calc(-100% + 20px);
+    margin-left: calc(-100% - 4px);
 }
