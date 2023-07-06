@@ -1,59 +1,10 @@
-// import { useState } from 'react';
 import './index.css';
-// import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '@fortawesome/fontawesome-svg-core/styles.css';
-// import { RxDotFilled } from 'react-icons/rx';
-// import welcomeImage from './assets/welcome.png';
-// import weightsImage from './assets/weights.png';
-// import racksImage from './assets/racks.png';
-// import machinesImage from './assets/machines.png';
-// import attatchmentsImage from './assets/attatchments.png';
 import NavBar from './components/NavBar';
 import SideBar from './components/SideBar';
 import WelcomeVid from './assets/welcome.mp4'
 
-// interface Slide {
-//   img: string;
-// }
-
 function App() {
-  // const slides: Slide[] = [
-  //   {
-  //     img: welcomeImage,
-  //   },
-  //   {
-  //     img: weightsImage,
-  //   },
-  //   {
-  //     img: racksImage,
-  //   },
-  //   {
-  //     img: attatchmentsImage,
-  //   },
-  //   {
-  //     img: machinesImage,
-  //   },
-  // ];
-
-  // const [currentIndex, setCurrentIndex] = useState(0);
-
-  // const prevSlide = () => {
-  //   const isFirstSlide = currentIndex === 0;
-  //   const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-  //   setCurrentIndex(newIndex);
-  // };
-
-  // const nextSlide = () => {
-  //   const isLastSlide = currentIndex === slides.length - 1;
-  //   const newIndex = isLastSlide ? 0 : currentIndex + 1;
-  //   setCurrentIndex(newIndex);
-  // };
-
-  // const goToSlide = (slideIndex: any) => {
-  //   setCurrentIndex(slideIndex);
-  // };
-
 
   return (
     <>
