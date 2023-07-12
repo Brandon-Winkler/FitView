@@ -8,7 +8,6 @@ const UserAuth = () => {
 
         loginBtn.addEventListener('click', () => {
             loginForm.classList.remove('moved');
-            signupForm.classList.add('moved');
         });
 
         signupBtn.addEventListener('click', () => {
