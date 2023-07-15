@@ -2,6 +2,7 @@ import { useState } from "react";
 import { faFilter } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '@fortawesome/fontawesome-svg-core/styles.css';
+import FilterButton from "./FilterButton";
 
 const SideBar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -32,31 +33,30 @@ const SideBar = () => {
                 <div className="border-b-2 pb-5">
                     <h1 className="text-lg pl-5 py-4 font-medium">Category</h1>
                     <ul className="pl-5">
-                        <button className="transition-all ease-in-out duration-150 rounded border-2 px-4 border-black bg-white hover:invert">Barbells </button>
-                        <button className="transition-all ease-in-out duration-150 rounded border-2 px-4 border-black bg-white hover:invert">Weights </button>
-                        <button className="transition-all ease-in-out duration-150 rounded border-2 px-4 border-black bg-white hover:invert">Benches </button>
-                        <button className="transition-all ease-in-out duration-150 rounded border-2 px-4 border-black bg-white hover:invert">Dumbbells </button>
-                        <button className="transition-all ease-in-out duration-150 rounded border-2 px-4 border-black bg-white hover:invert">Racks </button>
-                        <button className="transition-all ease-in-out duration-150 rounded border-2 px-4 border-black bg-white hover:invert">Machines </button>
-                        <button className="transition-all ease-in-out duration-150 rounded border-2 px-4 border-black bg-white hover:invert">Conditioning </button>
-                        <button className="transition-all ease-in-out duration-150 rounded border-2 px-4 border-black bg-white hover:invert">Strongman </button>
-                        <button className="transition-all ease-in-out duration-150 rounded border-2 px-4 border-black bg-white hover:invert">Crossfit</button>
-                        <button className="transition-all ease-in-out duration-150 rounded border-2 px-4 border-black bg-white hover:invert">Gymnastics </button>
+                        <FilterButton>Barbells</FilterButton>
+                        <FilterButton>Weights</FilterButton>
+                        <FilterButton>Benches</FilterButton>
+                        <FilterButton>Dumbells</FilterButton>
+                        <FilterButton>Racks</FilterButton>
+                        <FilterButton>Machines</FilterButton>
+                        <FilterButton>Conditioning</FilterButton>
+                        <FilterButton>Strongman</FilterButton>
+                        <FilterButton>Crossfit</FilterButton>
+                        <FilterButton>Gymnastics</FilterButton>
                     </ul>
                 </div>
                 <div className="border-b-2 pb-5">
                     <h1 className="text-lg pl-5 py-4 font-medium">Brands</h1>
                     <ul className="pl-5">
-                        <button className="transition-all ease-in-out duration-150 rounded border-2 px-4 border-black bg-white hover:invert">Rogue </button>
-                        <button className="transition-all ease-in-out duration-150 rounded border-2 px-4 border-black bg-white hover:invert">Rep </button>
-                        <button className="transition-all ease-in-out duration-150 rounded border-2 px-4 border-black bg-white hover:invert">Sorinex </button>
-                        <button className="transition-all ease-in-out duration-150 rounded border-2 px-4 border-black bg-white hover:invert">Titan </button>
-                        <button className="transition-all ease-in-out duration-150 rounded border-2 px-4 border-black bg-white hover:invert">Peloton </button>
-                        <button className="transition-all ease-in-out duration-150 rounded border-2 px-4 border-black bg-white hover:invert">EliteFTS </button>
-                        <button className="transition-all ease-in-out duration-150 rounded border-2 px-4 border-black bg-white hover:invert">NordicTrack </button>
-                        <button className="transition-all ease-in-out duration-150 rounded border-2 px-4 border-black bg-white hover:invert">LifeFitness </button>
-                        <button className="transition-all ease-in-out duration-150 rounded border-2 px-4 border-black bg-white hover:invert">Eleiko </button>
-                        <button className="transition-all ease-in-out duration-150 rounded border-2 px-4 border-black bg-white hover:invert">TRX </button>
+                        <FilterButton>Rogue</FilterButton>
+                        <FilterButton>Rep</FilterButton>
+                        <FilterButton>Sorinex</FilterButton>
+                        <FilterButton>Titan</FilterButton>
+                        <FilterButton>Peloton</FilterButton>
+                        <FilterButton>EliteFTS</FilterButton>
+                        <FilterButton>NordicTrack</FilterButton>
+                        <FilterButton>LifeFitness</FilterButton>
+                        <FilterButton>TRX</FilterButton>
                     </ul>
                 </div>
                 <div className="border-b-2 pb-5">
@@ -91,19 +91,19 @@ const SideBar = () => {
                         <form className="pl-5 flex flex-col px-16">
 
                             <label htmlFor="Earlist">Earlist:</label><br />
-                            <input 
-                            type="text" 
-                            id="Earliest"
-                            placeholder="mm/dd/yyyy"
-                            className="px-5 py-2 pl-5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black" 
+                            <input
+                                type="text"
+                                id="Earliest"
+                                placeholder="mm/dd/yyyy"
+                                className="px-5 py-2 pl-5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
                             />
 
                             <label htmlFor="Latest" className="pt-4">Latest:</label><br />
-                            <input 
-                            type="text" 
-                            id="Lastest" 
-                            placeholder="mm/dd/yyyy" 
-                            className="px-5 py-2 pl-5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black" 
+                            <input
+                                type="text"
+                                id="Lastest"
+                                placeholder="mm/dd/yyyy"
+                                className="px-5 py-2 pl-5 border rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
                             />
 
                         </form>

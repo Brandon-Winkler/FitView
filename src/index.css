@@ -9,11 +9,20 @@
 
 
 
-/* custom css */
+/******** CUSTOM CSS ********/
+
+
+/* user login/sign-up form effects */
 #formContainer .flex {
     transition: margin-left 0.3s ease-in-out;
 }
-
 #formContainer .flex.moved {
     margin-left: calc(-100% - 4px);
+}
+
+
+/* button effects */
+.custom-button:hover,
+.custom-button.active {
+    filter: invert(100%);
 }
