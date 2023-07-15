@@ -1,4 +1,4 @@
-const NavBar = () => {
+const NavBar: React.FC = () => {
     return (
         <nav className='h-24 z-10 sticky top-0'>
             <div className='flex justify-center items-center h-full'>

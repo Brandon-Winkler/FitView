@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import FilterButton from "./FilterButton";
 
-const SideBar = () => {
+const SideBar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (

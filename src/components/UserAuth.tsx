@@ -1,4 +1,4 @@
-const UserAuth = () => {
+const UserAuth: React.FC = () => {
     
     document.addEventListener('DOMContentLoaded', () => {
         const loginBtn = document.getElementById('loginBtn') as HTMLButtonElement;
