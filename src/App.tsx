@@ -2,7 +2,7 @@ import './index.css';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import NavBar from './components/NavBar';
 import SideBar from './components/SideBar';
-import WelcomeVid from './assets/welcome.mp4'
+import Welcome from './assets/welcome.mp4'
 
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
     <>
       <div className='max-w relative'>
           <video className='max-w' autoPlay loop>
-            <source src={WelcomeVid} type="video/mp4" />
+            <source src={Welcome} type="video/mp4" />
           </video>
         <div className='absolute inset-0 flex flex-row justify-center items-center'>
           <h1 className='font-dm font-semibold text-5xl text-white'>WELCOME TO</h1>
